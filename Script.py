@@ -1,21 +1,21 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href='https://t.me/Wireless_TG'>𝙴𝚅𝙰 𝙼𝙰𝚁𝙸𝙰</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
+    START_TXT = """𝐇𝐄𝐋𝐋𝐎 {},
+𝐌𝐘 𝐍𝐀𝐌𝐄 𝐈𝐒 <a href='https://t.me/Wireless_TG'>𝐌𝐈𝐋𝐋𝐈𝐄</a>, 𝐈 𝐂𝐀𝐍 𝐏𝐑𝐎𝐕𝐈𝐃𝐄 𝐌𝐎𝐕𝐈𝐄𝐒, 𝐉𝐔𝐒𝐓 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 & 𝐌𝐀𝐊𝐄 𝐌𝐄 𝐀𝐃𝐌𝐈𝐍 😍"""
+    HELP_TXT = """𝐇𝐄𝐘 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: 𝙴𝚟𝚊 𝙼𝚊𝚛𝚒𝚊
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: Millie Bobby Brown
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+    ABOUT_TXT = """✯ 𝐌𝐘 𝐍𝐀𝐌𝐄 : 𝐌𝐈𝐋𝐋𝐈𝐄
+✯ 𝐂𝐑𝐄𝐀𝐓𝐎𝐑:  <a href='https://t.me/Wireless_TG'>𝐖𝐢𝐫𝐞𝐥𝐞𝐬𝐬⛕</𝐚>
+✯ 𝐋𝐈𝐁𝐑𝐀𝐑𝐘: 𝐏𝐑𝐎𝐆𝐑𝐀𝐌
+✯ 𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄: 𝐏𝐘𝐓𝐇𝐎𝐍 𝟑
+✯ 𝐃𝐀𝐓𝐀 𝐁𝐀𝐒𝐄: 𝐌𝐎𝐍𝐆𝐎 𝐃𝐁
+✯ 𝐁𝐎𝐓 𝐒𝐄𝐑𝐕𝐄𝐑: 𝐇𝐄𝐑𝐎𝐊𝐔
+✯ 𝐁𝐔𝐈𝐋𝐃 𝐒𝐓𝐀𝐓𝐔𝐒: 𝐕𝟏.𝟎.𝟏[ 𝐁𝐄𝐓𝐀 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - Millie Bobby Brown Is Not A Open Source
 
 <b>DEVS:</b>
-- <a href=https://t.me/Wireless_TG>WIRELESS</a>"""
+- <a href=https://t.me/Wireless_TG>𝐖𝐢𝐫𝐞𝐥𝐞𝐬𝐬⛕</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and tessa will respond whenever a keyword is found the message
