@@ -25,7 +25,7 @@ WIRELESS = [
                     InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
                 ],
                 [
-                     InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
                  ]
               ]
 
@@ -333,6 +333,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption
+                    reply_markup=InlineKeyboardMarkup(WIRELESS)
                     )
                 await query.answer('Check PM, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
@@ -364,6 +365,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption
+            reply_markup=InlineKeyboardMarkup(WIRELESS)
             )
 
     elif query.data == "pages":
