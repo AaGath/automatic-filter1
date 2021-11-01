@@ -20,7 +20,7 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
-buttons = [
+filebuttons = [
                     [
                         InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
                     ],
@@ -332,8 +332,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f_caption
-                    reply_markup=InlineKeyboardMarkup(WIRELESS)
+                    caption=f_caption,
+                    reply_markup=InlineKeyboardMarkup(filebuttons)
                     )
                 await query.answer('Check PM, I have sent files in pm',show_alert = True)
         except UserIsBlocked:
@@ -365,7 +365,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup=InlineKeyboardMarkup(buttons)
+            reply_markup=InlineKeyboardMarkup(filebuttons)
             )
 
     elif query.data == "pages":
