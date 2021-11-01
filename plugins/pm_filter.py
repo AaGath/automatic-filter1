@@ -20,14 +20,14 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
-WIRELESS = [
-             [
-                    InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
-                ],
-                [
-                    InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
-                 ]
-              ]
+buttons = [
+                    [
+                        InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
+                    ],
+                    [
+                        InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
+                    ]
+                    ]
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client,message):
@@ -364,8 +364,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
-            caption=f_caption
-            reply_markup=InlineKeyboardMarkup(WIRELESS)
+            caption=f_caption,
+            reply_markup=InlineKeyboardMarkup(buttons)
             )
 
     elif query.data == "pages":
