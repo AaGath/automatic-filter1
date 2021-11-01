@@ -12,6 +12,15 @@ from utils import get_size, is_subscribed, temp
 
 logger = logging.getLogger(__name__)
 
+buttons = [
+                    [
+                        InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
+                    ],
+                    [
+                        InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
+                    ]
+                    ]
+
 @Client.on_message(filters.private & filters.command("start"))
 async def start(client, message):
     if not await db.is_user_exist(message.from_user.id):
@@ -97,6 +106,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup(buttons)
         )
                     
 
