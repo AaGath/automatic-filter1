@@ -20,6 +20,14 @@ from database.filters_mdb import(
 
 BUTTONS = {}
 
+WIRELESS = [
+             [
+                    InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
+                ],
+                [
+                     InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
+                 ]
+              ]
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client,message):
@@ -57,7 +65,7 @@ async def give_filter(client,message):
                         await message.reply_cached_media(
                             fileid,
                             caption=reply_text or "",
-                            reply_markup=InlineKeyboardMarkup(button)
+                            reply_markup=InlineKeyboardMarkup(WIRELESS)
                         )
                 except Exception as e:
                     print(e)
