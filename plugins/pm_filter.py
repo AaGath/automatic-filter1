@@ -22,10 +22,10 @@ BUTTONS = {}
 
 filebuttons = [
                     [
-                        InlineKeyboardButton('⁉️ Support Group', url='t.me/sofia_support'),
+                        InlineKeyboardButton('🎬 Movies 🎬', url='t.me/PrimeFlixMovies'),
                     ],
                     [
-                        InlineKeyboardButton('🔎 Search', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('💢 TV SERIES 💢', url='https://t.me/TvseriesCollectionsPrimeflix')
                     ]
                     ]
 
