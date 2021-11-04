@@ -558,6 +558,7 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
                     ]
                 ]
             )
+         ),
         if not btn:
             return
 
