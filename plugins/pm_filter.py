@@ -542,6 +542,24 @@ async def auto_filter(client, message):
                 btn.append(
                     [InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{file_id}'), InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files_#{file_id}')]
                     )
+       else:
+            m = await message.reply(
+            text=f"""
+<b>🥺 Dear {message.from_user.mention}
+Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
+<i>Please Go to Google and Confirm the Correct Spelling 🥺🙏</i></b>""",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("🕵️‍♂️ GOOGLE 🕵️‍♂️", url="https://www.google.com")
+                    ],
+                    [       
+                        InlineKeyboardButton("Did not understand🥲", url="https://t.me/joinchat/6WZ0z0AQ0E8yMDdl")
+                    ]
+                ]
+            )
+        )
+
         if not btn:
             return
 
