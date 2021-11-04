@@ -542,9 +542,9 @@ async def auto_filter(client, message):
                 btn.append(
                     [InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{file_id}'), InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files_#{file_id}')]
                     )
-    else:
-          await message.reply(
-          text=f"""
+        else:
+            await message.reply(
+              text=f"""
 <b>🥺 Dear {message.from_user.mention}
 Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
 <i>Please Go to Google and Confirm the Correct Spelling 🥺🙏</i></b>""",
@@ -558,7 +558,7 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
                     ]
                 ]
             )
-         ),
+         )
         if not btn:
             return
 
