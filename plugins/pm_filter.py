@@ -2,6 +2,7 @@
 import asyncio
 import re
 import ast
+import time
 from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
@@ -543,7 +544,7 @@ async def auto_filter(client, message):
                     [InlineKeyboardButton(text=f"{file.file_name}", callback_data=f'files#{file_id}'), InlineKeyboardButton(text=f"{get_size(file.file_size)}", callback_data=f'files_#{file_id}')]
                     )
         else:
-            await message.reply(
+        m = await message.reply(
               text=f"""
 <b>🥺 Dear {message.from_user.mention}
 Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
@@ -559,6 +560,8 @@ Sorry  bro ,{search} No Movie/Series Related to the Given Word Was Found 🥺
                 ]
             )
          )
+       time.sleep(10)
+       await m.delete()
         if not btn:
             return
 
